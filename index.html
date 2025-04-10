@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>THE GYM</title>
+  </head>
+  <body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+      <header>
+        <h1>THE <span class="txtRojo">GYM</span></h1>
+        <nav id="nav">
+          <a href="#inicio" onclick="seleccionar()">Home</a>
+          <a href="#nosotros" onclick="seleccionar()">About Us</a>
+          <a href="#servicios" onclick="seleccionar()">Services</a>
+          <a href="#comodidades" onclick="seleccionar()">Amenities</a>
+          <a href="#galeria" onclick="seleccionar()">Gallery</a>
+          <a href="#equipo" onclick="seleccionar()">Team</a>
+          <a href="#contacto" onclick="seleccionar()">Contact</a>
+        </nav>
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div
+          id="icono-nav"
+          class="nav-responsive"
+          onclick="mostrarOcultarMenu()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECTION: HOME -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-seccion">
+        <div class="info">
+          <h2>MAKE IT <span class="txtRojo">HAPPEN</span></h2>
+          <p>Success is closer than you think!</p>
+          <a href="#nosotros" class="btn-mas">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+          </a>
+        </div>
+        <div class="opciones">
+          <div class="opcion">01.FITNESS</div>
+          <div class="opcion">02.CROSSFIT</div>
+          <div class="opcion">03.BOXING</div>
+          <div class="opcion">04.ENDURANCE</div>
+          <div class="opcion">05.YOGA</div>
+          <div class="opcion">06.CARDIO</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT US -->
+    <section id="nosotros" class="nosotros">
+      <div class="fila">
+        <div class="col">
+          <img src="img/nosotros.png" alt="" />
+        </div>
+        <div class="col">
+          <div class="contenedor-titulo">
+            <div class="numero">01</div>
+            <div class="info">
+              <span class="frase">THE BEST EXPERIENCE</span>
+              <h2>ABOUT US</h2>
+            </div>
+          </div>
+          <p class="p-especial">We are more than a gym — we are a lifestyle.</p>
+          <p>
+            At THE GYM, we provide the tools, motivation, and support you need
+            to reach your goals. Our team of experts and our modern facilities
+            ensure you have everything to unleash your potential.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="fila-nosotros">
+        <div class="col1">
+          <span class="frase">
+            <span class="txtRojo">TRAIN</span> DIFFERENT
+          </span>
+          <h2>WORK OUT <span class="txtRojo">FREE</span> TODAY!</h2>
+        </div>
+        <div class="col2">
+          <button>FREE PASS</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SERVICES -->
+    <section class="servicios" id="servicios">
+      <div class="contenido-seccion">
+        <div class="fila">
+          <div class="col">
+            <div class="contenedor-titulo">
+              <div class="numero">02</div>
+              <div class="info">
+                <span class="frase">THE BEST EXPERIENCE</span>
+                <h2>SERVICES</h2>
+              </div>
+            </div>
+            <p class="p-especial">Discover everything you can do with us.</p>
+            <p>
+              From strength training and cardio to mindfulness practices, we
+              offer a full range of programs designed to help you reach your
+              full potential. Our staff will guide and support you in every step
+              of your fitness journey.
+            </p>
+          </div>
+          <div class="col">
+            <img src="img/servicios.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="info-servicios">
+        <table>
+          <tr>
+            <td>
+              <i class="fa-solid fa-person-walking"></i>
+              <h3><span class="txtRojo">Fitness </span> Classes</h3>
+              <p>
+                Improve your overall physical condition with our dynamic fitness
+                sessions.
+              </p>
+            </td>
+            <td>
+              <i class="fa-solid fa-dumbbell"></i>
+              <h3><span class="txtRojo">Crossfit </span> Sessions</h3>
+              <p>
+                Challenge your body with high-intensity workouts led by
+                certified trainers.
+              </p>
+            </td>
+            <td>
+              <i class="fa-solid fa-mitten"></i>
+              <h3><span class="txtRojo">Boxing </span> Classes</h3>
+              <p>
+                Build strength, confidence, and agility in our boxing programs.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa-solid fa-clock"></i>
+              <h3><span class="txtRojo">Endurance </span> Training</h3>
+              <p>
+                Increase your stamina and cardiovascular capacity in fun, tough
+                sessions.
+              </p>
+            </td>
+            <td>
+              <i class="fa-solid fa-heart-circle-bolt"></i>
+              <h3><span class="txtRojo">Cardio </span> Workouts</h3>
+              <p>
+                Burn calories and boost your heart health with energetic cardio
+                routines.
+              </p>
+            </td>
+            <td>
+              <i class="fa-solid fa-bicycle"></i>
+              <h3><span class="txtRojo">Cycling </span> Classes</h3>
+              <p>
+                Pedal your way to fitness with guided sessions full of energy
+                and music.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION: AMENITIES -->
+    <section id="comodidades" class="comodidades">
+      <div class="fila">
+        <div class="col">
+          <img src="img/nosotros.png" alt="" />
+        </div>
+        <div class="col">
+          <div class="contenedor-titulo">
+            <div class="numero">03</div>
+            <div class="info">
+              <span class="frase">THE BEST EXPERIENCE</span>
+              <h2>AMENITIES</h2>
+            </div>
+          </div>
+          <p class="p-especial">
+            Everything you need to feel comfortable while you train.
+          </p>
+          <ul>
+            <li>
+              <span>POOL</span> - Enjoy our heated indoor pool available
+              year-round for training or relaxation.
+            </li>
+            <li>
+              <span>FREE WIFI</span> - Stay connected with high-speed internet
+              throughout the entire facility.
+            </li>
+            <li>
+              <span>FREE PARKING</span> - Ample parking space available so your
+              workout begins stress-free.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GALLERY -->
+    <section class="galeria" id="galeria">
+      <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+          <div class="numero">04</div>
+          <div class="info">
+            <span class="frase">THE BEST EXPERIENCE</span>
+            <h2>GALLERY</h2>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col"><img src="img/f1.jpg" alt="" /></div>
+          <div class="col"><img src="img/f2.jpg" alt="" /></div>
+          <div class="col"><img src="img/f3.jpg" alt="" /></div>
+        </div>
+        <div class="fila">
+          <div class="col"><img src="img/f4.jpg" alt="" /></div>
+          <div class="col"><img src="img/f5.jpg" alt="" /></div>
+          <div class="col"><img src="img/f6.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TEAM -->
+    <section class="equipo" id="equipo">
+      <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+          <div class="numero">05</div>
+          <div class="info">
+            <span class="frase">THE BEST EXPERIENCE</span>
+            <h2>TEAM</h2>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <img src="img/e1.png" alt="" />
+            <div class="info">
+              <h2>MARCOS</h2>
+              <p>Fitness - Pilates - Yoga</p>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/e2.png" alt="" />
+            <div class="info">
+              <h2>PATRICIA</h2>
+              <p>Fitness - Pilates - Yoga</p>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/e3.png" alt="" />
+            <div class="info">
+              <h2>JUAN</h2>
+              <p>Fitness - Pilates - Yoga</p>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contacto" id="contacto">
+      <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+          <div class="numero">06</div>
+          <div class="info">
+            <span class="frase">THE BEST EXPERIENCE</span>
+            <h2>CONTACT</h2>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <input type="email" placeholder="Enter Email" />
+          </div>
+          <div class="col">
+            <input type="text" placeholder="Enter Name" />
+          </div>
+        </div>
+        <div class="mensaje">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your Message"
+          ></textarea>
+          <button>Send Message</button>
+        </div>
+        <div class="fila-datos">
+          <div class="col">
+            <i class="fa-solid fa-location-dot"></i>
+            000 Morro Avenue, City Center
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-phone"></i>
+            +0 (000) 000-0000
+          </div>
+          <div class="col">
+            <i class="fa-regular fa-clock"></i>
+            Monday to Saturday, 8:00 AM - 22:00 PM
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="info">
+        <p>2023 - <span class="txtRojo">THE GYM</span> All rights reserved</p>
+        <div class="redes">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
