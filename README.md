@@ -1,65 +1,63 @@
-#### English version
+# THE GYM — Landing Page
 
-<div align="center"><strong>THE GYM - Landing Page</strong></div>
-<div align="center">Built with HTML - CSS - JavaScript</div>
-<br />
+Landing page for a (fictional) premium gym. A frontend showcase built with **vanilla HTML, CSS and JavaScript** — no frameworks, no build step.
 
-## Description
+## Highlights
 
-THE GYM is a personal project developed as part of my portfolio. It is a dynamic and responsive landing page for a gym website designed to showcase my front-end development skills using only HTML, CSS, and JavaScript—without relying on frameworks or libraries.
+- **Dark, athletic design system**: volt accent, condensed display type (Anton) + Inter.
+- **Responsive**: 320px → 1440px, mobile-first.
+- **Accessible**: skip link, semantic landmarks, keyboard navigation, visible focus, labeled form fields, `prefers-reduced-motion`.
+- **Interactive**: accessible mobile menu, scroll reveal, gallery lightbox (`<dialog>`), contact form validation.
+- **Performance**: all images in WebP (~9 MB → ~1 MB), no icon fonts (inline SVG).
+- **SEO**: meta description, Open Graph/Twitter, JSON-LD `HealthClub`, favicon.
 
-## Technologies Used
+## Sections
 
-- Markup - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Styling - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+Hero · Marquee · Programs · About · Amenities · Trainers · Gallery · Pricing · Testimonials · CTA · Contact · Footer.
 
-## Project Purpose
+## Stack
 
-This project was created for learning and showcasing purposes. It demonstrates how a clean, interactive, and visually appealing landing page can be built using just core web technologies, focusing on performance and user experience.
+- HTML5
+- CSS3 (custom properties, Grid, `clamp()`)
+- Vanilla JS (`IntersectionObserver`, `<dialog>`)
 
-## Live Preview
+## Structure
 
-You can see the project in action on [Github Pages](https://jordanroberto74.github.io/the_gym/).
+```
+index.html
+styles.css
+main.js
+favicon.svg
+.nojekyll
+img/
+  fondo.webp
+  fondo-servicios.webp
+  fondo-galeria.webp
+  nosotros.webp
+  servicios.webp
+  e1.webp · e2.webp · e3.webp
+  f1.webp … f6.webp
+```
+
+## Run locally
+
+Open `index.html` directly, or serve the folder:
+
+```bash
+python -m http.server 8080
+```
+
+Then visit <http://localhost:8080>.
+
+## Live preview
+
+<https://jordanroberto74.github.io/the_gym/>
+
+## Notes
+
+- **Demo / fictional content**: gym name, address, prices, trainers and testimonials are illustrative.
+- The contact form is **front-end only**: it validates fields and shows a success state; no backend.
 
 ## Contact
 
-If you would like to learn more about my work or collaborate on future projects, feel free to contact me at jordanroberto74@gmail.com.
-
-Thank you for visiting THE GYM!
-
-<br />
-
----
-
-<br />
-
-#### Versión en español
-
-<div align="center"><strong>THE GYM - Página de aterrizaje</strong></div>
-<div align="center">Construida con HTML - CSS - JavaScript</div>
-<br />
-
-## Descripción
-
-THE GYM es un proyecto personal desarrollado como parte de mi portafolio. Es una landing page dinámica y responsiva para un sitio web de gimnasio, diseñada para demostrar mis habilidades en desarrollo front-end utilizando solo HTML, CSS y JavaScript, sin depender de frameworks ni bibliotecas externas.
-
-## Tecnologías Utilizadas
-
-- Marcado - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- Estilos - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- Scripting - [Javascript (vanilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-## Propósito del Proyecto
-
-Este proyecto fue creado con fines de aprendizaje y demostración. Muestra cómo se puede construir una página de aterrizaje limpia, interactiva y visualmente atractiva utilizando solo tecnologías web fundamentales, enfocándose en el rendimiento y la experiencia del usuario.
-
-## Vista Previa
-
-Puedes ver el proyecto en funcionamiento en [Github Pages](https://jordanroberto74.github.io/the_gym/).
-
-## Contacto
-
-Si deseas conocer más sobre mi trabajo o colaborar en futuros proyectos, puedes contactarme en jordanroberto74@gmail.com.
-
-¡Gracias por visitar THE GYM!
+[jordanroberto74@gmail.com](mailto:jordanroberto74@gmail.com)
